@@ -150,7 +150,7 @@
             <node concept="liA8E" id="7jvVom7lWqc" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="7jvVom7lWs0" role="37wK5m">
-                <property role="Xl_RC" value="hallo welt" />
+                <property role="Xl_RC" value="tschüss welt" />
               </node>
             </node>
           </node>
