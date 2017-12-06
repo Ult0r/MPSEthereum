@@ -1,0 +1,61 @@
+# -----------------------------------------------------------
+# General
+# -----------------------------------------------------------
+.ant_targets
+.DS_Store
+.metadata
+.svn
+/build/
+/buildSrc/build/
+/artifacts/
+/tmp/
+
+# -----------------------------------------------------------
+# Model Checking Results
+# -----------------------------------------------------------
+*.csv
+
+# -----------------------------------------------------------
+# Latex
+# -----------------------------------------------------------
+*.synctex.gz
+*.aux
+*.log
+*.*.synctex.gz
+*.*.aux
+*.*.log
+
+# -----------------------------------------------------------
+# IDEA
+# -----------------------------------------------------------
+.idea
+workspace.xml
+
+# -----------------------------------------------------------
+# JUNIT
+# -----------------------------------------------------------
+junitvmwatcher*.properties
+build.properties
+TEST-*.xml
+junit*.properties
+
+# -----------------------------------------------------------
+# MPS
+# -----------------------------------------------------------
+classes_gen
+source_gen
+source_gen.caches
+test_gen
+test_gen.caches
+languages/*/*.iws
+languages/*/build.properties
+languages/*/TEST*.xml
+languages/org.iets3.core/build/tmp
+
+# -----------------------------------------------------------
+# GRADLE
+# -----------------------------------------------------------
+.gradle/
+languages/org.iets3.core/solutions/org.iets3.simbench.examples.ivi/IVI_SimulationGuide_imgFM.png
+.settings
+.gradletasknamecache
