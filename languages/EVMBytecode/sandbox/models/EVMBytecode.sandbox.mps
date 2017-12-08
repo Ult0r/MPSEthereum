@@ -8,6 +8,7 @@
   <imports />
   <registry>
     <language id="f8a76422-185d-4ec7-ae30-0716393b2d47" name="EVMBytecode">
+      <concept id="5253455413580042937" name="EVMBytecode.structure.DELEGATECALL" flags="ng" index="h8Dt$" />
       <concept id="8421710985963130078" name="EVMBytecode.structure.ADD" flags="ng" index="3Nyq5r" />
       <concept id="8421710985963130075" name="EVMBytecode.structure.STOP" flags="ng" index="3Nyq5u" />
       <concept id="8421710985963129803" name="EVMBytecode.structure.Contract" flags="ng" index="3Nyqpe">
@@ -23,6 +24,7 @@
     <node concept="3Nyq5r" id="7jvVom7lRV3" role="3Nyq56" />
     <node concept="3Nyq5u" id="7jvVom7lRV8" role="3Nyq56" />
     <node concept="3Nyq5r" id="7jvVom7lSdz" role="3Nyq56" />
+    <node concept="h8Dt$" id="4zC1tPpMNPN" role="3Nyq56" />
   </node>
 </model>
 
