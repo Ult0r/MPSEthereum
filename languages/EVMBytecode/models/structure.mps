@@ -50,7 +50,6 @@
   <node concept="1TIwiD" id="7jvVom7l$Jb">
     <property role="EcuMT" value="8421710985963129803" />
     <property role="TrG5h" value="Contract" />
-    <property role="19KtqR" value="true" />
     <property role="R4oN_" value="an EVM-bytecode program" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7jvVom7l$N3" role="1TKVEi">
@@ -559,6 +558,24 @@
     <property role="TrG5h" value="SELFDESTRUCT" />
     <property role="34LRSv" value="SELFDESTRUCT" />
     <ref role="1TJDcQ" node="7jvVom7l$N6" resolve="OpCode" />
+  </node>
+  <node concept="1TIwiD" id="2Mp2knEFEAJ">
+    <property role="EcuMT" value="3213610005000268207" />
+    <property role="TrG5h" value="Session" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2Mp2knEFEAK" role="1TKVEl">
+      <property role="IQ2nx" value="3213610005000268208" />
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="2Mp2knEFEBj" role="1TKVEi">
+      <property role="IQ2ns" value="3213610005000268243" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="contracts" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7jvVom7l$Jb" resolve="Contract" />
+    </node>
   </node>
 </model>
 

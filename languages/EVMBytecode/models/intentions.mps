@@ -51,25 +51,25 @@
       </concept>
     </language>
   </registry>
-  <node concept="2S6QgY" id="1oVM53Xrig6">
-    <property role="TrG5h" value="Start" />
-    <ref role="2ZfgGC" to="wq4o:7jvVom7l$Jb" resolve="Contract" />
-    <node concept="2S6ZIM" id="1oVM53Xrig7" role="2ZfVej">
-      <node concept="3clFbS" id="1oVM53Xrig8" role="2VODD2">
-        <node concept="3clFbF" id="1oVM53XriIE" role="3cqZAp">
-          <node concept="Xl_RD" id="1oVM53XriID" role="3clFbG">
-            <property role="Xl_RC" value="start" />
+  <node concept="2S6QgY" id="2Ygqu5u5T92">
+    <property role="TrG5h" value="Shutdown" />
+    <ref role="2ZfgGC" to="wq4o:2Mp2knEFEAJ" resolve="Session" />
+    <node concept="2S6ZIM" id="2Ygqu5u5T93" role="2ZfVej">
+      <node concept="3clFbS" id="2Ygqu5u5T94" role="2VODD2">
+        <node concept="3clFbF" id="2Ygqu5u5Tm7" role="3cqZAp">
+          <node concept="Xl_RD" id="2Ygqu5u5Tm6" role="3clFbG">
+            <property role="Xl_RC" value="shutdown EVM instance" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="2Sbjvc" id="1oVM53Xrig9" role="2ZfgGD">
-      <node concept="3clFbS" id="1oVM53Xriga" role="2VODD2">
-        <node concept="3clFbF" id="1oVM53XripN" role="3cqZAp">
-          <node concept="2OqwBi" id="1oVM53XriwP" role="3clFbG">
-            <node concept="2Sf5sV" id="1oVM53XripM" role="2Oq$k0" />
-            <node concept="2qgKlT" id="1oVM53XriEN" role="2OqNvi">
-              <ref role="37wK5l" to="klhn:7jvVom7lTUZ" resolve="startEVM" />
+    <node concept="2Sbjvc" id="2Ygqu5u5T95" role="2ZfgGD">
+      <node concept="3clFbS" id="2Ygqu5u5T96" role="2VODD2">
+        <node concept="3clFbF" id="2Ygqu5u5Uhb" role="3cqZAp">
+          <node concept="2OqwBi" id="2Ygqu5u5Uod" role="3clFbG">
+            <node concept="2Sf5sV" id="2Ygqu5u5Uha" role="2Oq$k0" />
+            <node concept="2qgKlT" id="2Ygqu5u5Uy8" role="2OqNvi">
+              <ref role="37wK5l" to="klhn:2Mp2knEFEPV" resolve="shutdownServer" />
             </node>
           </node>
         </node>

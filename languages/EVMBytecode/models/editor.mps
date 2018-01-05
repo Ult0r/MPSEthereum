@@ -106,5 +106,39 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="2Mp2knEFEBa">
+    <ref role="1XX52x" to="wq4o:2Mp2knEFEAJ" resolve="Session" />
+    <node concept="3EZMnI" id="2Mp2knEGf7M" role="2wV5jI">
+      <node concept="3F0ifn" id="2Mp2knEGnmc" role="3EZMnx">
+        <property role="3F0ifm" value="Session" />
+      </node>
+      <node concept="3F0A7n" id="2Mp2knEGnmi" role="3EZMnx">
+        <ref role="1NtTu8" to="wq4o:2Mp2knEFEAK" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="2Mp2knEGnmq" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+        <node concept="ljvvj" id="2Mp2knEGnmv" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="2Mp2knEGnmD" role="3EZMnx">
+        <ref role="1NtTu8" to="wq4o:2Mp2knEFEBj" resolve="contracts" />
+        <node concept="l2Vlx" id="2Mp2knEGnmG" role="2czzBx" />
+        <node concept="lj46D" id="2Mp2knEGnmN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="2Mp2knEGnmP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="2Mp2knEGnNm" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2Mp2knEGnn2" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+      </node>
+      <node concept="l2Vlx" id="2Mp2knEGf7P" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
