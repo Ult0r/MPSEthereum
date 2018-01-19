@@ -6,6 +6,7 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -22,9 +23,14 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <property id="241647608299431129" name="propertyId" index="IQ2nx" />
@@ -51,6 +57,7 @@
     <property role="EcuMT" value="8421710985963129803" />
     <property role="TrG5h" value="Contract" />
     <property role="R4oN_" value="an EVM-bytecode program" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7jvVom7l$N3" role="1TKVEi">
       <property role="IQ2ns" value="8421710985963130051" />
@@ -59,20 +66,21 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7jvVom7l$N6" resolve="OpCode" />
     </node>
-    <node concept="1TJgyi" id="7jvVom7l$Jc" role="1TKVEl">
-      <property role="IQ2nx" value="8421710985963129804" />
-      <property role="TrG5h" value="name" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyi" id="7jvVom7l$Je" role="1TKVEl">
       <property role="IQ2nx" value="8421710985963129806" />
       <property role="TrG5h" value="location" />
-      <ref role="AX2Wp" node="7jvVom7l$N2" resolve="TAddress" />
+      <ref role="AX2Wp" node="24Ww4lxDZSi" resolve="TAnyAddress" />
+    </node>
+    <node concept="PrWs8" id="1Z8garIZOFN" role="PzmwI">
+      <ref role="PrY4T" node="1Z8garIZOFK" resolve="SessionContent" />
+    </node>
+    <node concept="PrWs8" id="24Ww4lxDJLc" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="Az7Fb" id="7jvVom7l$N2">
     <property role="TrG5h" value="TAddress" />
-    <property role="FLfZY" value="(0x)?[a-fA-F0-9]{40}+" />
+    <property role="FLfZY" value="((0x)?[a-fA-F0-9]{40}+)" />
   </node>
   <node concept="1TIwiD" id="7jvVom7l$N6">
     <property role="EcuMT" value="8421710985963130054" />
@@ -564,18 +572,62 @@
     <property role="TrG5h" value="Session" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="2Mp2knEFEAK" role="1TKVEl">
-      <property role="IQ2nx" value="3213610005000268208" />
-      <property role="TrG5h" value="name" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyj" id="2Mp2knEFEBj" role="1TKVEi">
       <property role="IQ2ns" value="3213610005000268243" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="contracts" />
+      <property role="20kJfa" value="content" />
       <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1Z8garIZOFK" resolve="SessionContent" />
+    </node>
+    <node concept="PrWs8" id="24Ww4lxDUJt" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1Z8garIZe_k">
+    <property role="EcuMT" value="2290151496236198228" />
+    <property role="TrG5h" value="ContractRef" />
+    <property role="34LRSv" value="ContractRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1Z8garIZe_n" role="1TKVEi">
+      <property role="IQ2ns" value="2290151496236198231" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="contract" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7jvVom7l$Jb" resolve="Contract" />
     </node>
+    <node concept="PrWs8" id="1Z8garIZOFL" role="PzmwI">
+      <ref role="PrY4T" node="1Z8garIZOFK" resolve="SessionContent" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1Z8garIZOFK">
+    <property role="EcuMT" value="2290151496236354288" />
+    <property role="TrG5h" value="SessionContent" />
+  </node>
+  <node concept="1TIwiD" id="24Ww4lxDX6H">
+    <property role="EcuMT" value="2394930137333748141" />
+    <property role="TrG5h" value="Account" />
+    <property role="34LRSv" value="Account" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="24Ww4lxDZSf" role="1TKVEl">
+      <property role="IQ2nx" value="2394930137333759503" />
+      <property role="TrG5h" value="address" />
+      <ref role="AX2Wp" node="7jvVom7l$N2" resolve="TAddress" />
+    </node>
+    <node concept="PrWs8" id="24Ww4lxDX6I" role="PzmwI">
+      <ref role="PrY4T" node="1Z8garIZOFK" resolve="SessionContent" />
+    </node>
+    <node concept="PrWs8" id="24Ww4lxDX6O" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="24Ww4lxDX6Y" role="1TKVEl">
+      <property role="IQ2nx" value="2394930137333748158" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="Az7Fb" id="24Ww4lxDZSi">
+    <property role="TrG5h" value="TAnyAddress" />
+    <property role="FLfZY" value="((0x)?[a-fA-F0-9]{40}+)|anywhere" />
   </node>
 </model>
 

@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="wq4o" ref="r:624fabf1-0989-4b6b-a383-02d96bea330b(EVMBytecode.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
@@ -28,10 +29,15 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
       <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
         <property id="1238091709220" name="labelName" index="1413C4" />
       </concept>
+      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -59,7 +65,7 @@
         <property role="3F0ifm" value="Contract" />
       </node>
       <node concept="3F0A7n" id="7jvVom7lLjF" role="3EZMnx">
-        <ref role="1NtTu8" to="wq4o:7jvVom7l$Jc" resolve="name" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="7jvVom7lLkW" role="3EZMnx">
         <property role="3F0ifm" value="at" />
@@ -113,7 +119,7 @@
         <property role="3F0ifm" value="Session" />
       </node>
       <node concept="3F0A7n" id="2Mp2knEGnmi" role="3EZMnx">
-        <ref role="1NtTu8" to="wq4o:2Mp2knEFEAK" resolve="name" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="2Mp2knEGnmq" role="3EZMnx">
         <property role="3F0ifm" value="{" />
@@ -122,7 +128,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="2Mp2knEGnmD" role="3EZMnx">
-        <ref role="1NtTu8" to="wq4o:2Mp2knEFEBj" resolve="contracts" />
+        <ref role="1NtTu8" to="wq4o:2Mp2knEFEBj" resolve="content" />
         <node concept="l2Vlx" id="2Mp2knEGnmG" role="2czzBx" />
         <node concept="lj46D" id="2Mp2knEGnmN" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -138,6 +144,24 @@
         <property role="3F0ifm" value="}" />
       </node>
       <node concept="l2Vlx" id="2Mp2knEGf7P" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1Z8garIZEMV">
+    <ref role="1XX52x" to="wq4o:1Z8garIZe_k" resolve="ContractRef" />
+    <node concept="3EZMnI" id="1Z8garIZEMX" role="2wV5jI">
+      <node concept="3F0ifn" id="1Z8garIZEN3" role="3EZMnx">
+        <property role="3F0ifm" value="External Contract:" />
+      </node>
+      <node concept="1iCGBv" id="1Z8garIZEN9" role="3EZMnx">
+        <ref role="1NtTu8" to="wq4o:1Z8garIZe_n" resolve="contract" />
+        <node concept="1sVBvm" id="1Z8garIZENb" role="1sWHZn">
+          <node concept="3F0A7n" id="1Z8garIZENm" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="1Z8garIZEMZ" role="2iSdaV" />
     </node>
   </node>
 </model>
