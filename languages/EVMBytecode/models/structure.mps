@@ -7,16 +7,13 @@
   </languages>
   <imports>
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
-    <import index="e8no" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.containers(MPS.IDEA/)" />
     <import index="lktc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:gnu.trove(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
-        <property id="7862711839422615217" name="text" index="t5JxN" />
-      </concept>
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
@@ -62,7 +59,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -657,12 +653,13 @@
     </node>
   </node>
   <node concept="Az7Fb" id="24Ww4lxDZSi">
-    <property role="TrG5h" value="TAnyAddress" />
-    <property role="FLfZY" value="((0x)?[a-fA-F0-9]{40}+)|anywhere" />
+    <property role="TrG5h" value="TAnywhere" />
+    <property role="FLfZY" value="anywhere" />
     <property role="3GE5qa" value="Addresses" />
   </node>
   <node concept="AxPO7" id="3ZsATP3W_La">
     <property role="TrG5h" value="TEther" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="3ZsATP3W_Lb" role="M5hS2">
       <property role="1uS6qv" value="Ether" />
@@ -729,7 +726,7 @@
     <node concept="1TJgyi" id="3ZsATP3WSkA" role="1TKVEl">
       <property role="IQ2nx" value="4601724019018007846" />
       <property role="TrG5h" value="address" />
-      <ref role="AX2Wp" node="24Ww4lxDZSi" resolve="TAnyAddress" />
+      <ref role="AX2Wp" node="24Ww4lxDZSi" resolve="TAnywhere" />
     </node>
   </node>
   <node concept="1TIwiD" id="3ZsATP3WSkC">
@@ -785,10 +782,7 @@
     <node concept="1TJgyi" id="19UMMgortSp" role="1TKVEl">
       <property role="IQ2nx" value="1331599995730517529" />
       <property role="TrG5h" value="data" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="t5JxF" id="19UMMgortSt" role="lGtFl">
-        <property role="t5JxN" value="TODO" />
-      </node>
+      <ref role="AX2Wp" node="7l6kbfL$Pem" resolve="TTransactionData" />
     </node>
   </node>
   <node concept="PlHQZ" id="19UMMgos8Kx">
@@ -824,6 +818,19 @@
       <property role="20kJfa" value="sessions" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="2Mp2knEFEAJ" resolve="Session" />
+    </node>
+  </node>
+  <node concept="Az7Fb" id="7l6kbfL$Pem">
+    <property role="TrG5h" value="TTransactionData" />
+    <property role="FLfZY" value="(([a-fA-F0-9]{2}+)*)|no data" />
+  </node>
+  <node concept="1TIwiD" id="7Vtgf_dKqtF">
+    <property role="EcuMT" value="9141534258127546219" />
+    <property role="TrG5h" value="EmptyLine" />
+    <property role="34LRSv" value="EmptyLine" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7Vtgf_dKqtG" role="PzmwI">
+      <ref role="PrY4T" node="1Z8garIZOFK" resolve="SessionContent" />
     </node>
   </node>
 </model>

@@ -30,6 +30,8 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
+      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="8313721352726366579" name="jetbrains.mps.lang.editor.structure.CellModel_Empty" flags="ng" index="35HoNQ" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
@@ -245,7 +247,7 @@
     <ref role="1XX52x" to="wq4o:3ZsATP3WSku" resolve="AddressRef" />
     <node concept="3EZMnI" id="19UMMgosfiw" role="2wV5jI">
       <node concept="l2Vlx" id="19UMMgosfix" role="2iSdaV" />
-      <node concept="3F0ifn" id="19UMMgosfi$" role="3EZMnx">
+      <node concept="3F0ifn" id="7M6glWvrO$h" role="3EZMnx">
         <property role="3F0ifm" value="named address" />
       </node>
       <node concept="1iCGBv" id="19UMMgosfiD" role="3EZMnx">
@@ -312,6 +314,15 @@
   <node concept="24kQdi" id="19UMMgospBf">
     <ref role="1XX52x" to="wq4o:19UMMgospAL" resolve="EVMConnection" />
     <node concept="3EZMnI" id="19UMMgospBh" role="2wV5jI">
+      <node concept="3F0ifn" id="7l6kbfL_swh" role="3EZMnx">
+        <property role="3F0ifm" value="Name:" />
+      </node>
+      <node concept="3F0A7n" id="7l6kbfL_swJ" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="ljvvj" id="7l6kbfL_swZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="19UMMgospBn" role="3EZMnx">
         <property role="3F0ifm" value="URL:" />
       </node>
@@ -320,6 +331,12 @@
       </node>
       <node concept="3F0ifn" id="19UMMgospCf" role="3EZMnx">
         <property role="3F0ifm" value=":" />
+        <node concept="11L4FC" id="7M6glWvrO$N" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="7M6glWvrOFW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0A7n" id="19UMMgospCp" role="3EZMnx">
         <ref role="1NtTu8" to="wq4o:19UMMgospAQ" resolve="port" />
@@ -327,6 +344,9 @@
       <node concept="3F0ifn" id="19UMMgospC_" role="3EZMnx">
         <property role="3F0ifm" value="/" />
         <node concept="ljvvj" id="19UMMgospCS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11L4FC" id="7M6glWvrSAT" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -345,6 +365,17 @@
         <node concept="l2Vlx" id="19UMMgospDs" role="2czzBx" />
       </node>
       <node concept="l2Vlx" id="19UMMgospBj" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7Vtgf_dKqtQ">
+    <ref role="1XX52x" to="wq4o:7Vtgf_dKqtF" resolve="EmptyLine" />
+    <node concept="3EZMnI" id="7Vtgf_dKqtS" role="2wV5jI">
+      <node concept="3F0ifn" id="7Vtgf_dK_R$" role="3EZMnx">
+        <node concept="ljvvj" id="7Vtgf_dK_RC" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="7Vtgf_dKqtV" role="2iSdaV" />
     </node>
   </node>
 </model>

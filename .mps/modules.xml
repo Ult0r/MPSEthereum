@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/EVMBytecode/EVMBytecode.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/EVMBytecode/sandbox/EVMBytecode.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/EVMBytecode.runtime/EVMBytecode.runtime.msd" folder="" />
     </projectModules>
   </component>
 </project>
