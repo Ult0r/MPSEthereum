@@ -7,14 +7,9 @@
   </languages>
   <imports>
     <import index="wq4o" ref="r:624fabf1-0989-4b6b-a383-02d96bea330b(EVMBytecode.structure)" implicit="true" />
-    <import index="klhn" ref="r:082a75b6-909d-4dbe-997f-e8ccbab20c0f(EVMBytecode.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
-        <child id="1197027771414" name="operand" index="2Oq$k0" />
-        <child id="1197027833540" name="operation" index="2OqNvi" />
-      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
@@ -27,23 +22,16 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
-        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-      </concept>
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
       <concept id="1192794782375" name="jetbrains.mps.lang.intentions.structure.DescriptionBlock" flags="in" index="2S6ZIM" />
       <concept id="1192795911897" name="jetbrains.mps.lang.intentions.structure.ExecuteBlock" flags="in" index="2Sbjvc" />
-      <concept id="1192796902958" name="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" flags="nn" index="2Sf5sV" />
       <concept id="2522969319638091381" name="jetbrains.mps.lang.intentions.structure.BaseIntentionDeclaration" flags="ig" index="2ZfUlf">
         <reference id="2522969319638198290" name="forConcept" index="2ZfgGC" />
         <child id="2522969319638198291" name="executeFunction" index="2ZfgGD" />
         <child id="2522969319638093993" name="descriptionFunction" index="2ZfVej" />
       </concept>
-    </language>
-    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -51,29 +39,20 @@
       </concept>
     </language>
   </registry>
-  <node concept="2S6QgY" id="2Ygqu5u5T92">
+  <node concept="2S6QgY" id="19UMMgosw4j">
     <property role="TrG5h" value="Shutdown" />
-    <ref role="2ZfgGC" to="wq4o:2Mp2knEFEAJ" resolve="Session" />
-    <node concept="2S6ZIM" id="2Ygqu5u5T93" role="2ZfVej">
-      <node concept="3clFbS" id="2Ygqu5u5T94" role="2VODD2">
-        <node concept="3clFbF" id="2Ygqu5u5Tm7" role="3cqZAp">
-          <node concept="Xl_RD" id="2Ygqu5u5Tm6" role="3clFbG">
-            <property role="Xl_RC" value="shutdown EVM instance" />
+    <ref role="2ZfgGC" to="wq4o:19UMMgospAL" resolve="EVMConnection" />
+    <node concept="2S6ZIM" id="19UMMgosw4k" role="2ZfVej">
+      <node concept="3clFbS" id="19UMMgosw4l" role="2VODD2">
+        <node concept="3clFbF" id="19UMMgoswd2" role="3cqZAp">
+          <node concept="Xl_RD" id="19UMMgoswd1" role="3clFbG">
+            <property role="Xl_RC" value="shutting down the EVM-Server" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="2Sbjvc" id="2Ygqu5u5T95" role="2ZfgGD">
-      <node concept="3clFbS" id="2Ygqu5u5T96" role="2VODD2">
-        <node concept="3clFbF" id="2Ygqu5u5Uhb" role="3cqZAp">
-          <node concept="2OqwBi" id="2Ygqu5u5Uod" role="3clFbG">
-            <node concept="2Sf5sV" id="2Ygqu5u5Uha" role="2Oq$k0" />
-            <node concept="2qgKlT" id="2Ygqu5u5Uy8" role="2OqNvi">
-              <ref role="37wK5l" to="klhn:2Mp2knEFEPV" resolve="shutdownServer" />
-            </node>
-          </node>
-        </node>
-      </node>
+    <node concept="2Sbjvc" id="19UMMgosw4m" role="2ZfgGD">
+      <node concept="3clFbS" id="19UMMgosw4n" role="2VODD2" />
     </node>
   </node>
 </model>
