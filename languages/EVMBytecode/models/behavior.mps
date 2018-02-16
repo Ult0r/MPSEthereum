@@ -1704,15 +1704,20 @@
           <node concept="3cpWsn" id="19UMMgosBCK" role="3cpWs9">
             <property role="TrG5h" value="fullURL" />
             <node concept="17QB3L" id="19UMMgosBCG" role="1tU5fm" />
-            <node concept="3cpWs3" id="19UMMgosIKV" role="33vP2m">
+            <node concept="3cpWs3" id="1nrFchyB3eK" role="33vP2m">
               <node concept="37vLTw" id="19UMMgosIRQ" role="3uHU7w">
                 <ref role="3cqZAo" node="19UMMgosyMd" resolve="path" />
               </node>
               <node concept="3cpWs3" id="19UMMgosC_y" role="3uHU7B">
-                <node concept="2OqwBi" id="19UMMgosBNq" role="3uHU7B">
-                  <node concept="13iPFW" id="19UMMgosBDS" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="19UMMgosBYK" role="2OqNvi">
-                    <ref role="3TsBF5" to="wq4o:19UMMgospAO" resolve="url" />
+                <node concept="3cpWs3" id="1nrFchyAZtQ" role="3uHU7B">
+                  <node concept="Xl_RD" id="1nrFchyAZM9" role="3uHU7w">
+                    <property role="Xl_RC" value=":" />
+                  </node>
+                  <node concept="2OqwBi" id="19UMMgosBNq" role="3uHU7B">
+                    <node concept="13iPFW" id="19UMMgosBDS" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="19UMMgosBYK" role="2OqNvi">
+                      <ref role="3TsBF5" to="wq4o:19UMMgospAO" resolve="url" />
+                    </node>
                   </node>
                 </node>
                 <node concept="2OqwBi" id="19UMMgosCQ1" role="3uHU7w">
@@ -1753,12 +1758,12 @@
             <node concept="3cpWs8" id="19UMMgosLiZ" role="3cqZAp">
               <node concept="3cpWsn" id="19UMMgosLj0" role="3cpWs9">
                 <property role="TrG5h" value="conn" />
-                <node concept="3uibUv" id="19UMMgosLj1" role="1tU5fm">
-                  <ref role="3uigEE" to="n3z7:~HttpsURLConnection" resolve="HttpsURLConnection" />
+                <node concept="3uibUv" id="1nrFchyAYNM" role="1tU5fm">
+                  <ref role="3uigEE" to="zf81:~HttpURLConnection" resolve="HttpURLConnection" />
                 </node>
                 <node concept="10QFUN" id="19UMMgosLj2" role="33vP2m">
-                  <node concept="3uibUv" id="19UMMgosLj3" role="10QFUM">
-                    <ref role="3uigEE" to="n3z7:~HttpsURLConnection" resolve="HttpsURLConnection" />
+                  <node concept="3uibUv" id="1nrFchyAWd6" role="10QFUM">
+                    <ref role="3uigEE" to="zf81:~HttpURLConnection" resolve="HttpURLConnection" />
                   </node>
                   <node concept="2OqwBi" id="19UMMgosLj4" role="10QFUP">
                     <node concept="2ShNRf" id="19UMMgosLj5" role="2Oq$k0">

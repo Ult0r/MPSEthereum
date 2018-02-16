@@ -82,5 +82,63 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="1nrFchyBpDy">
+    <property role="TrG5h" value="StartNode" />
+    <ref role="2ZfgGC" to="wq4o:19UMMgospAL" resolve="EVMConnection" />
+    <node concept="2S6ZIM" id="1nrFchyBpDz" role="2ZfVej">
+      <node concept="3clFbS" id="1nrFchyBpD$" role="2VODD2">
+        <node concept="3clFbF" id="1nrFchyBpMj" role="3cqZAp">
+          <node concept="Xl_RD" id="1nrFchyBpMi" role="3clFbG">
+            <property role="Xl_RC" value="Start the Ethereum Node" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1nrFchyBpD_" role="2ZfgGD">
+      <node concept="3clFbS" id="1nrFchyBpDA" role="2VODD2">
+        <node concept="3clFbF" id="1nrFchyBq5H" role="3cqZAp">
+          <node concept="2OqwBi" id="1nrFchyBqhG" role="3clFbG">
+            <node concept="2Sf5sV" id="1nrFchyBq5G" role="2Oq$k0" />
+            <node concept="2qgKlT" id="1nrFchyBqxv" role="2OqNvi">
+              <ref role="37wK5l" to="klhn:19UMMgosyIo" resolve="sendPostRequest" />
+              <node concept="Xl_RD" id="1nrFchyBq_y" role="37wK5m">
+                <property role="Xl_RC" value="/startNode" />
+              </node>
+              <node concept="10Nm6u" id="1nrFchyBqYy" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1nrFchyBr8J">
+    <property role="TrG5h" value="ShutdownNode" />
+    <ref role="2ZfgGC" to="wq4o:19UMMgospAL" resolve="EVMConnection" />
+    <node concept="2S6ZIM" id="1nrFchyBr8K" role="2ZfVej">
+      <node concept="3clFbS" id="1nrFchyBr8L" role="2VODD2">
+        <node concept="3clFbF" id="1nrFchyBrya" role="3cqZAp">
+          <node concept="Xl_RD" id="1nrFchyBry9" role="3clFbG">
+            <property role="Xl_RC" value="Shutdown the Ethereum Node" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1nrFchyBr8M" role="2ZfgGD">
+      <node concept="3clFbS" id="1nrFchyBr8N" role="2VODD2">
+        <node concept="3clFbF" id="1nrFchyBrEL" role="3cqZAp">
+          <node concept="2OqwBi" id="1nrFchyBrMt" role="3clFbG">
+            <node concept="2Sf5sV" id="1nrFchyBrEK" role="2Oq$k0" />
+            <node concept="2qgKlT" id="1nrFchyBrY1" role="2OqNvi">
+              <ref role="37wK5l" to="klhn:19UMMgosyIo" resolve="sendPostRequest" />
+              <node concept="Xl_RD" id="1nrFchyBs24" role="37wK5m">
+                <property role="Xl_RC" value="/shutdownNode" />
+              </node>
+              <node concept="10Nm6u" id="1nrFchyBsqu" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
