@@ -60,7 +60,7 @@
       <node concept="3clFbS" id="19UMMgosw4l" role="2VODD2">
         <node concept="3clFbF" id="19UMMgoswd2" role="3cqZAp">
           <node concept="Xl_RD" id="19UMMgoswd1" role="3clFbG">
-            <property role="Xl_RC" value="Shutdown the EVM-Server" />
+            <property role="Xl_RC" value="Shut the EVM-Server down" />
           </node>
         </node>
       </node>
@@ -118,7 +118,7 @@
       <node concept="3clFbS" id="1nrFchyBr8L" role="2VODD2">
         <node concept="3clFbF" id="1nrFchyBrya" role="3cqZAp">
           <node concept="Xl_RD" id="1nrFchyBry9" role="3clFbG">
-            <property role="Xl_RC" value="Shutdown the Ethereum Node" />
+            <property role="Xl_RC" value="Shut the Ethereum Node down" />
           </node>
         </node>
       </node>
